@@ -22,8 +22,11 @@ class DiarioRequest extends FormRequest
     public function rules(): array
     {
         return [
-			'data' => 'required',
-			'abertura' => 'required'
+            'data' => 'nullable|date',
+            'abertura' => 'nullable|numeric',
+            'max' => 'nullable|numeric',
+            'min' => 'nullable|numeric',
+            'fechamento' => 'nullable|numeric',
         ];
     }
 }

@@ -31,7 +31,7 @@ class Diario extends Model
      * @var array<int, string>
      */
     protected $table = 'diario';
-    protected $fillable = ['data', 'abertura'];
+    protected $fillable = ['data', 'abertura', 'max', 'min', 'fechamento', 'range'];
 
 
 }
